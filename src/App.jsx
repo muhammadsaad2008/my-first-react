@@ -28,15 +28,15 @@ function App(){
       <form onSubmit={handleSubmit}>
       <div>
           <input type="Number" name="Obtain Marks" id="ObtMarks" placeholder="Enter Obtain Marks" 
-          onChange={(e)=>setObtMarks(e.target.value)}/>
+          onChange={(e)=>setObtMarks(Number(e.target.value))}/>
         </div>
         <div>
       <input type="Number" name="Obtain Marks" id="TotMarks" placeholder="Enter Total Marks" 
-      onChange={(e)=>setTotMarks(e.target.value)}/>
+      onChange={(e)=>setTotMarks(Number(e.target.value))}/>
         </div>
       <button type="Submit" >Calculate</button>
     </form>
-      <p>Your Calculated Percentage is {Percentange.toFixed(2)}%</p>
+      <p>Your Calculated Percentage is {Percentange.toFixed(2)}</p>
     </div>
   )
 }
